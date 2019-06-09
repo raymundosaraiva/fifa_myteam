@@ -1,0 +1,221 @@
+{% extends "myteam/base.html" %}
+{% load static %}
+
+{% block body %}
+    <body style="background: transparent url({% static 'myteam/img/field.jpg' %})  no-repeat center center fixed;background-position-y: 17%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+{% endblock body %}
+
+{% block content %}
+
+  <div id="field" >
+
+  <div class="row" style="padding-top: 5%" >
+    <div class="player col s4 center" id="f1">
+      <span class="field-avatar">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+      </span>
+      <span class="player-name center"><name>Your Player</name></span>
+    </div>
+    <div class="player col s4" style="padding-top: 10%" id="f2">
+      <span class="field-avatar">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+      </span>
+      <span class="player-name center"><name>Your Player</name></span>
+    </div>
+    <div class="player col s4" id="f3">
+      <span class="field-avatar">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+      </span>
+      <span class="player-name center"><name>Your Player</name></span>
+    </div>
+  </div>
+
+  <div class="row" style="padding-top: 20%">
+    <div class="player col s6" style="padding-left: 10%" id="m1">
+      <span class="field-avatar">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+      </span>
+      <span class="player-name center"><name>Your Player</name></span>
+    </div>
+   <div class="player col s6" style="padding-right: 10%" id="m3">
+      <span class="field-avatar">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+      </span>
+      <span class="player-name center"><name>Your Player</name></span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="player col s12" id="m2">
+      <span class="field-avatar">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+      </span>
+      <span class="player-name center"><name>Your Player</name></span>
+    </div>
+  </div>
+
+  <div class="row"  style="margin-top: -5%">
+    <div class="player col s4"  id="b1">
+      <span class="field-avatar">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+      </span>
+      <span class="player-name center"><name>Your Player</name></span>
+    </div>
+    <div class="col s4">
+    </div>
+   <div class="player col s4"  id="b4">
+      <span class="field-avatar">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+      </span>
+      <span class="player-name center"><name>Your Player</name></span>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: -5%">
+    <div class="player col s6" style="padding-left: 10%" id="b2">
+      <span class="field-avatar">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+      </span>
+      <span class="player-name center"><name>Your Player</name></span>
+    </div>
+   <div class="player col s6" style="padding-right: 10%" id="b3">
+      <span class="field-avatar">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+      </span>
+      <span class="player-name center"><name>Your Player</name></span>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: -10%">
+    <div class="player col s12" id="gk">
+      <span class="field-avatar">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+      </span>
+      <span class="player-name center"><name>Your Player</name></span>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large pulse white modal-trigger" href="#modalPreferences"><img src="{% static 'myteam/img/white-ball.png' %}" width="57px"></a>
+  </div>
+
+  <!-- Modal Structure -->
+  <div id="modalPreferences" class="modal modal-fixed-footer">
+    <div class="modal-content center">
+      <h4>Preferences</h4>
+      <div id="loading"></div>
+      <div class="input-field col s12">
+        <select multiple id="nationality">
+          <option value="" disabled>Nationality</option>
+          {% for opt in nat %}
+          <option data-icon="{{ opt.Flag }}" value="{{forloop.counter}}">{{ opt.Nationality }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div class="input-field col s12">
+        <select multiple id="club">
+          <option value="" disabled>Club</option>
+          {% for opt in club %}
+          <option data-icon="{{ opt.ClubLogo }}" value="{{forloop.counter}}">{{ opt.Club }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <p class="range-field">
+        Overall
+        <input type="range" id="overall" min="40" max="100" value="0"/>
+      </p>
+
+      <p class="range-field">
+        Age
+        <input type="range" id="age" min="15" max="50" value="15"/>
+      </p>
+
+      <p class="range-field">
+        Agility
+        <input type="range" id="agility" min="0" max="100" value="0"/>
+      </p>
+
+      <p class="range-field">
+        Speed
+        <input type="range" id="speed" min="0" max="100" value="0"/>
+      </p>
+
+      <p class="range-field">
+        Shot Power
+        <input type="range" id="shotpower" min="0" max="100" value="0"/>
+      </p>
+
+    </div>
+
+    <div class="modal-footer">
+      <a id="filter" class="waves-effect waves-green green white-text btn-flat">Filter</a>
+    </div>
+  </div>
+
+{% endblock content %}
+
+{% block script %}
+
+ var rotation = function (){
+   $("#ball").rotate({
+      angle:0,
+      animateTo:360,
+      callback: rotation
+   });
+  }
+
+  $("#filter").click( function (e){
+    e.preventDefault();
+    $("#loading").html('<div class="progress"><div class="indeterminate"></div></div>');
+    var nat = $('#nationality option:selected').toArray().map(item => item.text).join('|');
+    var club = $('#club option:selected').toArray().map(item => item.text).join('|');
+    var over = $("#overall").val();
+    var age = $("#age").val();
+    var agil = $("#agility").val();
+    var speed = $("#speed").val();
+    var shotp = $("#shotpower").val();
+
+    $.get('get_team', {
+            nat: nat,
+            club: club,
+            over: over,
+            age: age,
+            agil: agil,
+            speed: speed,
+            shotp: shotp
+      }, function(data){
+        if(data && data.status){
+          setPlayer("gk", data.gk[0]);
+          setPlayer("b1", data.b[0]);
+          setPlayer("b2", data.b[1]);
+          setPlayer("b3", data.b[2]);
+          setPlayer("b4", data.b[3]);
+          setPlayer("m1", data.m[0]);
+          setPlayer("m2", data.m[1]);
+          setPlayer("m3", data.m[2]);
+          setPlayer("f1", data.f[0]);
+          setPlayer("f2", data.f[1]);
+          setPlayer("f3", data.f[2]);
+        } else{
+          M.toast({html: "Sorry! Not a Valid Query!", displayLength: 3000});
+        }
+        $("#loading").html('');
+        $('#modalPreferences').modal('close');
+    });
+  });
+
+  function setPlayer(id, player){
+    $("#"+id+" name").html(player.Name);
+    $("#"+id+" img").attr("src", player.Photo);
+  }
+
+
+{% endblock script %}
