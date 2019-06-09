@@ -1,5 +1,5 @@
 from django.db.models import *
-from adaptor.model import CsvDbModel
+# from adaptor.model import CsvDbModel
 
 
 class Player(Model):
@@ -48,8 +48,8 @@ class Player(Model):
         return self.Name
 
 
-class MyCsvModel(CsvDbModel):
-    class Meta:
-        dbModel = Player
-        delimiter = ","
-        has_header = True
+# class MyCsvModel(CsvDbModel):
+#     class Meta:
+#         dbModel = Player
+#         delimiter = ","
+#         has_header = True
