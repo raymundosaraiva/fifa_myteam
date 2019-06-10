@@ -1,5 +1,5 @@
 from django.db.models import *
-from .adaptor.model import CsvDbModel
+from .model import CsvDbModel
 
 
 class Player(Model):

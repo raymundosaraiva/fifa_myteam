@@ -5,8 +5,8 @@ import copy
 
 import csv
 from django.db.models.base import Model
-from adaptor.fields import Field, IgnoredField, ComposedKeyField, XMLRootField
-from adaptor.exceptions import ForeignKeyFieldError, FieldValueMissing
+from .fields import Field, IgnoredField, ComposedKeyField, XMLRootField
+from .exceptions import ForeignKeyFieldError, FieldValueMissing
 
 
 class ImproperlyConfigured(Exception):

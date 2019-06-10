@@ -4,7 +4,7 @@ from lxml import etree
 
 from django.db.models import Model as djangoModel
 from django.core.exceptions import ObjectDoesNotExist, MultipleObjectsReturned
-from adaptor import exceptions
+from .exceptions import *
 
 
 class AllChoices(object):
@@ -29,7 +29,7 @@ class Field(BaseField):
         self.null = kwargs.pop("null", False)
         self.default = kwargs.pop("default", None)
         if self.default and not self.null:
-            raise exceptions.FieldError("You cannot provide a default without setting the field as nullable")
+            raise FieldError("You cannot provide a default without setting the field as nullable")
         if 'row_num' in kwargs:
             self.position = kwargs.pop('row_num')
         else:
@@ -62,16 +62,16 @@ class Field(BaseField):
                 value = self.to_python(value)
             if value not in self.choices:
                 if not self.null:
-                    raise exceptions.ChoiceError("Value \'%s\' does not belong to %s" % (value, self.choices))
-                value = None 
+                    raise ChoiceError("Value \'%s\' does not belong to %s" % (value, self.choices))
+                value = None
             transform = self.get_transform_method(instance)
             value = transform(value)
             if not self.validator().validate(value):
-                raise exceptions.FieldError(self.validator.validation_message)
+                raise FieldError(self.validator.validation_message)
             return value
-        except exceptions.ChoiceError:
-            raise 
-        except exceptions.FieldError:
+        except ChoiceError:
+            raise
+        except FieldError:
             raise
         except ValueError:
             self.raise_type_error(value)
@@ -164,9 +164,9 @@ class DjangoModelField(Field):
         try:
             return self.model.objects.get(**{self.pk: value})
         except ObjectDoesNotExist:
-            raise exceptions.ForeignKeyFieldError("No match found for %s" % self.model.__name__, self.model.__name__, value)
+            raise ForeignKeyFieldError("No match found for %s" % self.model.__name__, self.model.__name__, value)
         except MultipleObjectsReturned:
-            raise exceptions.ForeignKeyFieldError("Multiple match found for %s" % self.model.__name__, self.model.__name__, value)
+            raise ForeignKeyFieldError("Multiple match found for %s" % self.model.__name__, self.model.__name__, value)
 
 
 class ComposedKeyField(DjangoModelField):
@@ -174,7 +174,7 @@ class ComposedKeyField(DjangoModelField):
         try:
             return self.model.objects.get(**value)
         except ObjectDoesNotExist:
-            raise exceptions.ForeignKeyFieldError("No match found for %s" % self.model.__name__, self.model.__name__, value)
+            raise ForeignKeyFieldError("No match found for %s" % self.model.__name__, self.model.__name__, value)
 
 
 class XMLField(Field):
@@ -279,7 +279,7 @@ class XMLDjangoModelField(XMLField, DjangoModelField):
     def get_prep_value(self, value, instance=None):
         try:
             return super(XMLDjangoModelField, self).get_prep_value(value, instance=instance)
-        except exceptions.ForeignKeyFieldError as e:
+        except ForeignKeyFieldError as e:
             if self.nomatch:
                 return None
             else:

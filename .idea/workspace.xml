@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bba0318-188d-4bb9-9ff0-b85f06eba4ef" name="Default Changelist" comment="" />
+    <list default="true" id="3bba0318-188d-4bb9-9ff0-b85f06eba4ef" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myteam/adaptor/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/myteam/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myteam/adaptor/fields.py" beforeDir="false" afterPath="$PROJECT_DIR$/myteam/fields.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myteam/adaptor/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/myteam/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myteam/adaptor/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/myteam/validators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myteam/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/myteam/models.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,13 +32,106 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="myteam_player: table" type="3d80ac25:SqliteImplModel$Table" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myteam/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myteam/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myteam/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myteam/model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7032">
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <folding>
+                <element signature="e#41#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myteam/validators.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myteam/fields.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myteam/exceptions.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -71,17 +171,21 @@
       <list>
         <option value="$PROJECT_DIR$/fifa/urls.py" />
         <option value="$PROJECT_DIR$/myteam/tests.py" />
-        <option value="$PROJECT_DIR$/myteam/models.py" />
         <option value="$PROJECT_DIR$/myteam/static/myteam/fifa.csv" />
         <option value="$PROJECT_DIR$/myteam/static/myteam/positions" />
         <option value="$PROJECT_DIR$/myteam/templates/myteam/large_screen.html" />
         <option value="$PROJECT_DIR$/myteam/static/myteam/css/materialize.css" />
-        <option value="$PROJECT_DIR$/myteam/urls.py" />
         <option value="$PROJECT_DIR$/myteam/serializers.py" />
         <option value="$PROJECT_DIR$/fifa/settings.py" />
         <option value="$PROJECT_DIR$/myteam/templates/myteam/team.html" />
         <option value="$PROJECT_DIR$/myteam/templates/myteam/base.html" />
+        <option value="$PROJECT_DIR$/myteam/urls.py" />
         <option value="$PROJECT_DIR$/myteam/views.py" />
+        <option value="$PROJECT_DIR$/myteam/adaptor/model.py" />
+        <option value="$PROJECT_DIR$/myteam/model.py" />
+        <option value="$PROJECT_DIR$/myteam/fields.py" />
+        <option value="$PROJECT_DIR$/myteam/validators.py" />
+        <option value="$PROJECT_DIR$/myteam/models.py" />
       </list>
     </option>
   </component>
@@ -96,7 +200,41 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="fifa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fifa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fifa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fifa" type="462c0819:PsiDirectoryNode" />
+              <item name="fifa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fifa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fifa" type="462c0819:PsiDirectoryNode" />
+              <item name="myteam" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fifa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fifa" type="462c0819:PsiDirectoryNode" />
+              <item name="myteam" type="462c0819:PsiDirectoryNode" />
+              <item name="adaptor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fifa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="fifa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
@@ -112,18 +250,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.buildout.BuildoutModulesConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/myteam/static/myteam/img" />
-      <recent name="$PROJECT_DIR$/myteam/templates/myteam" />
-      <recent name="$PROJECT_DIR$/myteam/static/myteam/js" />
-      <recent name="$PROJECT_DIR$/myteam/static/myteam/css" />
-      <recent name="$PROJECT_DIR$/myteam/static/myteam" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/myteam" />
       <recent name="$PROJECT_DIR$/fifa" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/myteam/static/myteam/csv" />
       <recent name="$PROJECT_DIR$/myteam/static/myteam/img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/fifa/adapter" />
+      <recent name="$PROJECT_DIR$/myteam/static/myteam/img" />
+      <recent name="$PROJECT_DIR$/myteam/templates/myteam" />
+      <recent name="$PROJECT_DIR$/myteam/static/myteam/js" />
+      <recent name="$PROJECT_DIR$/myteam/static/myteam/css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -202,18 +341,29 @@
       <updated>1560027774966</updated>
       <workItem from="1560027776517" duration="24784000" />
       <workItem from="1560111237486" duration="8993000" />
+      <workItem from="1560122015921" duration="1498000" />
     </task>
+    <task id="LOCAL-00001" summary="Adaptor for Csv">
+      <created>1560129490776</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560129490776</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33777000" />
+    <option name="totallyTimeSpent" value="35275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21530758" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21816881" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="SQL Generator" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
@@ -223,7 +373,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -237,6 +387,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adaptor for Csv" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adaptor for Csv" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/myteam/urls" />
@@ -300,16 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myteam/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://882691c3-428e-4c73-a976-15265511abe4/schema/main/table/myteam_player">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -338,31 +482,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../iclinic_api/prescription/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../iclinic_api/prescription/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="126" column="27" selection-start-line="126" selection-start-column="12" selection-end-line="126" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../iclinic_api/iclinic_api/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1440" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../iclinic_api/prescription/serializers.py" />
+    <entry file="file://$PROJECT_DIR$/../iclinic_api/prescription/views.py" />
+    <entry file="file://$PROJECT_DIR$/../iclinic_api/iclinic_api/settings.py" />
     <entry file="file://$PROJECT_DIR$/myteam/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -377,16 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myteam/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -433,12 +545,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://3d48d674-8dc5-4ce6-a6ab-cf298eb8104b/schema/main/table/myteam_player">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myteam/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/local/lib/python3.7/site-packages/adaptor/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="uml://DjangoModelDependency/#fifa">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DjangoModelDependency</ID>
+          <OriginalElement>#fifa</OriginalElement>
+          <nodes>
+            <node x="" y="">myteam.models.Player</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="84.5" y="14.5" />
+          <SelectedNodes />
+          <Categories />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.7/site-packages/adaptor/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="282" column="6" selection-start-line="282" selection-start-column="6" selection-end-line="282" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myteam/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/myteam/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        <state relative-caret-position="690">
+          <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myteam/exceptions.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myteam/fields.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myteam/validators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myteam/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7032">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="e#41#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myteam/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
