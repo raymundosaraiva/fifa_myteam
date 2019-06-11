@@ -30,7 +30,7 @@ def index(request):
     return render(request, 'myteam/team.html', context)
 
 
-@cache_page(60 * 60 * 24 * 10, cache='default', key_prefix='')
+# @cache_page(60 * 60 * 24 * 10, cache='default', key_prefix='')
 def get_team(request):
     nat = request.GET.get('nat', '*')
     club = request.GET.get('club', '*')
