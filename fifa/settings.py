@@ -25,7 +25,7 @@ SECRET_KEY = 'p%mfz%+7t2s%i!sug7j=ze=_5h(se2w-z(byiq11u_pvn5mzxh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False if os.environ.get('DEBUG_OPTION') else True
 
-ALLOWED_HOSTS = [] if DEBUG else ['localhost:8000', '.herokuapp.com']
+ALLOWED_HOSTS = [] if DEBUG else ['localhost:8000', 'fifa-myteam.herokuapp.com']
 
 
 # Application definition
