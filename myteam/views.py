@@ -82,4 +82,8 @@ def get_team(request):
 def import_csv(request):
     module_dir = os.path.dirname(__file__)  # get current directory
     file_path = os.path.join(module_dir, 'static/myteam/csv/fifa.csv')
-    players = MyCsvModel.import_data(data=open(file_path))
+    MyCsvModel.import_data(data=open(file_path))
+
+
+def delete(request):
+    Player.objects.all().delete()

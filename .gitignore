@@ -116,3 +116,7 @@ dmypy.json
 *.xml
 *.meta
 .idea/workspace.xml
+*.djcache
+*.xml
+.idea/workspace.xml
+.idea/vcs.xml

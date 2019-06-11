@@ -16,19 +16,19 @@
   <div class="row" style="padding-top: 5%" >
     <div class="player col s4 center" id="f1">
       <span class="field-avatar">
-            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png" class="" data-position="top" data-tooltip="">
       </span>
       <span class="player-name center"><name>Your Player</name></span>
     </div>
     <div class="player col s4" style="padding-top: 10%" id="f2">
       <span class="field-avatar">
-            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png" class="" data-position="top" data-tooltip="">
       </span>
       <span class="player-name center"><name>Your Player</name></span>
     </div>
     <div class="player col s4" id="f3">
       <span class="field-avatar">
-            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png" class="" data-position="top" data-tooltip="">
       </span>
       <span class="player-name center"><name>Your Player</name></span>
     </div>
@@ -37,13 +37,13 @@
   <div class="row" style="padding-top: 20%">
     <div class="player col s6" style="padding-left: 10%" id="m1">
       <span class="field-avatar">
-            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png" class="" data-position="top" data-tooltip="">
       </span>
       <span class="player-name center"><name>Your Player</name></span>
     </div>
    <div class="player col s6" style="padding-right: 10%" id="m3">
       <span class="field-avatar">
-            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png" class="" data-position="top" data-tooltip="">
       </span>
       <span class="player-name center"><name>Your Player</name></span>
     </div>
@@ -52,7 +52,7 @@
   <div class="row">
     <div class="player col s12" id="m2">
       <span class="field-avatar">
-            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png" class="" data-position="top" data-tooltip="">
       </span>
       <span class="player-name center"><name>Your Player</name></span>
     </div>
@@ -61,7 +61,7 @@
   <div class="row"  style="margin-top: -5%">
     <div class="player col s4"  id="b1">
       <span class="field-avatar">
-            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png" class="" data-position="top" data-tooltip="">
       </span>
       <span class="player-name center"><name>Your Player</name></span>
     </div>
@@ -69,7 +69,7 @@
     </div>
    <div class="player col s4"  id="b4">
       <span class="field-avatar">
-            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png" class="" data-position="top" data-tooltip="">
       </span>
       <span class="player-name center"><name>Your Player</name></span>
     </div>
@@ -78,13 +78,13 @@
   <div class="row" style="margin-top: -5%">
     <div class="player col s6" style="padding-left: 10%" id="b2">
       <span class="field-avatar">
-            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png" class="" data-position="top" data-tooltip="">
       </span>
       <span class="player-name center"><name>Your Player</name></span>
     </div>
    <div class="player col s6" style="padding-right: 10%" id="b3">
       <span class="field-avatar">
-            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png" class="" data-position="top" data-tooltip="">
       </span>
       <span class="player-name center"><name>Your Player</name></span>
     </div>
@@ -93,13 +93,15 @@
   <div class="row" style="margin-top: -10%">
     <div class="player col s12" id="gk">
       <span class="field-avatar">
-            <img src="https://cdn.sofifa.org/players/4/notfound_0.png">
+            <img src="https://cdn.sofifa.org/players/4/notfound_0.png" class="" data-position="top" data-tooltip="">
       </span>
       <span class="player-name center"><name>Your Player</name></span>
     </div>
   </div>
 
   </div>
+
+
 
   <div class="fixed-action-btn">
     <a class="btn-floating btn-large pulse white modal-trigger" href="#modalPreferences"><img src="{% static 'myteam/img/white-ball.png' %}" width="57px"></a>
@@ -215,6 +217,10 @@
   function setPlayer(id, player){
     $("#"+id+" name").html(player.Name);
     $("#"+id+" img").attr("src", player.Photo);
+    var tooltip = ""+player.Club+"<br>"+player.Nationality+"<br>Overall: "+player.Overall;
+    $("#"+id+" img").attr("data-tooltip", tooltip);
+    $("#"+id+" img").addClass("tooltipped");
+    $('.tooltipped').tooltip();
   }
 
 
