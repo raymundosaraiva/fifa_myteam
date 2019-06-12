@@ -20,7 +20,7 @@ GK_NUM = 1
 
 # @cache_page(60 * 60 * 24 * 10, cache='default', key_prefix='')
 def index(request):
-    players = Player.objects.all().order_by('-Overall')
+    players = Player.objects.all()
     nat = players.values('Nationality', 'Flag').distinct()[:10]
     club = players.values('Club', 'ClubLogo').distinct()[:10]
     context = {
@@ -57,12 +57,12 @@ def get_team(request):
         'Age__gte': age,
     }
 
-    player = Player.objects.filter(**player_filter).order_by('-Overall')
+    player = Player.objects.filter(**player_filter)
 
-    f = player.filter(Position__regex=ATT)[:ATT_NUM]
-    m = player.filter(Position__regex=MID)[:MID_NUM]
-    b = player.filter(Position__regex=DEF)[:DEF_NUM]
-    gk = Player.objects.filter(**gk_filter, Position__regex=GK).order_by('-Overall')[:GK_NUM]
+    f = player.filter(Position__regex=ATT).distinct()[:ATT_NUM]
+    m = player.filter(Position__regex=MID).distinct()[:MID_NUM]
+    b = player.filter(Position__regex=DEF).distinct()[:DEF_NUM]
+    gk = Player.objects.filter(**gk_filter, Position__regex=GK).distinct()[:GK_NUM]
 
     status = False
     if f.count() >= ATT_NUM and m.count() >= MID_NUM and b.count() >= DEF_NUM and gk.count() >= GK_NUM:

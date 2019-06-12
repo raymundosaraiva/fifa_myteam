@@ -132,7 +132,7 @@
 
       <p class="range-field">
         Overall
-        <input type="range" id="overall" min="40" max="100" value="0"/>
+        <input type="range" id="overall" min="0" max="100" value="0"/>
       </p>
 
       <p class="range-field">
@@ -206,11 +206,12 @@
           setPlayer("f1", data.f[0]);
           setPlayer("f2", data.f[1]);
           setPlayer("f3", data.f[2]);
+
+          $('#modalPreferences').modal('close');
         } else{
           M.toast({html: "Sorry! Not a Valid Query!", displayLength: 3000});
         }
         $("#loading").html('');
-        $('#modalPreferences').modal('close');
     });
   });
 
