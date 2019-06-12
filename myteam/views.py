@@ -20,7 +20,7 @@ GK_NUM = 1
 
 # @cache_page(60 * 60 * 24 * 10, cache='default', key_prefix='')
 def index(request):
-    players = Player.objects.all()
+    players = Player.objects.all().filter(Overall__gte=85)
     nat = players.values('Nationality', 'Flag').distinct()[:10]
     club = players.values('Club', 'ClubLogo').distinct()[:10]
     context = {
